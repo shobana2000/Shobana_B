@@ -122,217 +122,477 @@
       }
     }
 
+
+  #certifications-container {
+    max-width: 600px; /* Adjust the maximum width as per your layout */
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+  }
+
+  #slideshow-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+
+  .slide {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .certification-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adjust this value for rounded corners */
+  }
+
+  #contact {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin-top as needed */
+  }
+  #social {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin-top as needed */
+  }
+
+  #social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Add some space below the social media links */
+  }
+
+  #social ul li {
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
+
+  #social ul li a {
+    text-decoration: none;
+    color: darkviolet;
+  }
+
+  #social ul li a:hover {
+    color: #0066cc; /* Change the color on hover as needed */
+    text-decoration: underline;
+  }
+
+  #experience {
+      text-align: center;
+    }
+
+    .experience-item {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .experience-item strong {
+      font-size: 1.2em;
+    }
+
+    .experience-item a {
+      color: #3498db;
+    }
+
+    .experience-item p {
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    .experience-details {
+      margin-top: 15px;
+      margin-left: 15px; /* Adjust the left margin as needed */
+    }
+
+    .experience-details h4 {
+      color: #3498db;
+    }
+
+    .experience-details ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .experience-details li {
+      margin-bottom: 10px;
+    }
+
+  .project {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .project h3 {
+    margin-bottom: 10px;
+  }
+
+  .project-details {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .education-entry {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .education-entry h3 {
+    margin-bottom: 10px;
+  }
+
+  .education-details {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .education-details li {
+    margin-bottom: 5px;
+  }
+
+
+   #about {
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+  }
+
+  .about-content p {
+    margin-bottom: 15px;
+  }
+
+  .about-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .about-content li {
+    margin-bottom: 15px;
+  }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Bonjour à tous, bienvenue sur mon profil..!</h1>
-    <h3><a style="color: white;" href="https://in.linkedin.com/in/shobana27?trk=profile-badge">J' suis Shobana</a></h3>
-      <h4>Code & Creativity <a style="color: white;" href="https://drive.google.com/file/d/19WQXKEpW5AOETB_QCcIghOlvpEhabM8p/view?usp=sharing">Resume</a></h4>
+   <header style="text-align: center;">
+    <img src="profile\photo.png" alt="Shobana's Profile Picture" style="border-radius: 50%; width: 150px; height: 150px; margin-right: 20px;">
+    <div style="display: inline-block; text-align: left;">
+      <h1>Hello or Bonjour à tous 👋, bienvenue sur mon profil..!</h1>
+      <h3><a style="color: white;" href="https://in.linkedin.com/in/shobana27?trk=profile-badge">J' suis Shobana</a></h3>
+      <h4>Code & Creativity <a style="color: white;"</h4>
+    </div>
 
   </header>
 
   <div class="menu-toggle">&#9776;</div>
   <div class="menu-icon">&#9776;</div>
 
-   <nav>
+  <nav>
     <a href="#about" onclick="toggleMenu()"><i class="fa fa-user"></i>About Me</a>
     <a href="#education" onclick="toggleMenu()"><i class="fa fa-book"></i>Education</a>
     <a href="#experience" onclick="toggleMenu()"><i class="fa fa-briefcase"></i>Experience</a>
     <a href="#projects" onclick="toggleMenu()"><i class="fa fa-laptop"></i>Projects</a>
     <a href="#contact" onclick="toggleMenu()"><i class="fa fa-envelope"></i>Contact</a>
+    <a href="#social" onclick="toggleMenu()"><i class="fa fa-envelope"></i>Social Media</a>
   </nav>
 
 
   <section id="about">
-      <a style="color: black;" href="https://drive.google.com/file/d/19WQXKEpW5AOETB_QCcIghOlvpEhabM8p/view?usp=sharing" target="_blank">Resume</a>
+    <a style="color: black;" href="https://drive.google.com/file/d/19WQXKEpW5AOETB_QCcIghOlvpEhabM8p/view?usp=sharing" target="_blank">Resume</a>
     <h2>About Me</h2>
-        <p>Hello there! 👋 I'm Shobana, a passionate and dedicated Software Engineer with a flair for Python and Perl development.
-             With 2 years of hands-on experience, I've been on an exciting journey of exploring the vast world of programming.</p>
-        <ul>
-            <li><strong>Professional Journey</strong></li><br/>
-                My professional career began with a drive to learn, innovate, and contribute to the ever-evolving tech landscape.
-                I've dedicated myself to mastering Python and Perl, bringing creative solutions to complex challenges.<br/>
-            <br/><li><strong>Work Ethic</strong></li><br/>
-                Known for my relentless work ethic, I thrive on challenges and approach each task with honesty, sincerity, and a commitment to
-                lifelong learning. My goal is not just to excel in the field but to make a positive impact on the industry.<br/>
-            <br/><li><strong>Why I'm Here</strong></li><br/>
-                While my previous experiences have been valuable, I felt a calling for something more impactful. I gave my all to my previous job,
-                investing time and energy, but the fulfillment I sought was elusive. Now, I am ready to channel my dedication and skills into
-                a role where I can contribute significantly to growth and success.<br/>
-           <br/><li><strong>Personal Aspirations</strong></li><br/>
-                Beyond the world of coding, I aspire to live life to the fullest, enjoying every moment and aiming for the stars.
-                I see each challenge as an opportunity to learn, grow, and achieve greatness. I'm not just looking for a job; I'm seeking an environment where I can unleash my potential and make a meaningful difference.
-        </ul>
+    <div class="about-content">
+      <p>I'm Shobana, a passionate and dedicated Software Engineer with a flair for Python and Perl development.
+        With 2 years of hands-on experience, I've been on an exciting journey of exploring the vast world of programming.
+          Seeking a challenging role to contribute innovative solutions to dynamic software development project</p>
+      <ul>
+        <li><strong>Professional Journey</strong></li>
+        <p>My professional career began with a drive to learn, innovate, and contribute to the ever-evolving tech landscape.
+          I've dedicated myself to mastering Python and Perl, bringing creative solutions to complex challenges.</p>
 
+        <li><strong>Work Ethic</strong></li>
+        <p>Known for my relentless work ethic, I thrive on challenges and approach each task with honesty, sincerity, and a commitment to
+          lifelong learning. My goal is not just to excel in the field but to make a positive impact on the industry.</p>
+
+        <li><strong>Why I'm Here</strong></li>
+        <p>While my previous experiences have been valuable, I felt a calling for something more impactful. I gave my all to my previous job,
+          investing time and energy, but the fulfillment I sought was elusive. Now, I am ready to channel my dedication and skills into
+          a role where I can contribute significantly to growth and success.</p>
+
+        <li><strong>Personal Aspirations</strong></li>
+        <p>Beyond the world of coding, I aspire to live life to the fullest, enjoying every moment and aiming for the stars.
+          I see each challenge as an opportunity to learn, grow, and achieve greatness. I'm not just looking for a job; I'm seeking an environment where I can unleash my potential and make a meaningful difference.</p>
+      </ul>
+    </div>
   </section>
 
   <section id="education">
     <h2>Education</h2>
-    <ul>
-      <li><strong>ANNA UNIVERSITY</strong><br>Tindivanam, India [Sep 2017 - Sep 2021]</li>
-      <p>Bachelor of Engineering in Computer Science - GPA 7.8/10, Honors: First Class</p>
-      <li><strong>SRI VDS JAIN HIGHER SECONDARY SCHOOL</strong><br>Tiruvannamalai, India [Jun 2016 - Mar 2017]</li>
-      <p>XII - 87%, Honors: first position in my class throughout</p>
-      <p>X - 83%</p>
-    </ul>
+    <div class="education-entry">
+      <h3><strong>ANNA UNIVERSITY</strong></h3>
+      <ul class="education-details">
+        <li>Bachelor of Engineering in Computer Science - GPA 7.8/10, Honors: First Class</li>
+        <li>[Sep 2017 - Sep 2021]</li>
+      </ul>
+    </div>
+    <div class="education-entry">
+      <h3><strong>SRI VDS JAIN HIGHER SECONDARY SCHOOL</strong></h3>
+      <ul class="education-details">
+          <li>XII - 87%, Honors: first position in my class throughout</li>
+          <li>[Jun 2016 - Mar 2017]</li>
+          <li>X - 83%</li>
+          <li>[Jun 2015 - Mar 2016]</li>
+      </ul>
+    </div>
   </section>
 
   <section id="experience">
-    <h2>Experience</h2>
-      <ul>
-        <li>
-          <strong>INTEGRA SOFTWARE SERVICES</strong><a href="https://integranxt.com/" target="_blank">
-              <i class="fa fa-github"></i>Integranxt.com</a><br>
-          Programmer | Puducherry, India [Sep 2021 - Oct 2023]
-        </li>
-        <br/>
-          <ul>
-            <li>Developed and implemented Python scripts to automate data analysis processes, resulting in a 50% reduction.</li>
-            <li>Collaborated on a Python-based tool, enhancing data processing efficiency by 75%.</li>
-            <li>Developed a Perl web scraping tool, boosting market data gathering by 80%.</li>
-            <li>Implemented RESTful APIs, increasing data transfer efficiency by 75% and reducing system downtime by 20%.</li>
-            <li>Achieved a 95% resolution rate for customer issues within 24 hours, elevating satisfaction by 15%.</li>
-            <li>Architected scalable solutions with Django and Flask, cutting response time by 50%.</li>
-            <li>Optimized database schemas for a 30% increase in application performance.</li>
-          </ul>
-      </ul>
+    <h2>Professional Experience</h2>
+
+    <div class="experience-item">
+      <strong>INTEGRA SOFTWARE SERVICES</strong>
+      <a href="https://integranxt.com/" target="_blank">
+        <i class="fa fa-github"></i>Integranxt.com</a>
+      <p>Programmer | Pondicherry, India | Sep 2021 – Oct 2023</p>
+
+      <div class="experience-details">
+        <h4>Python Application Development</h4>
+        <ul>
+          <li>Developed scalable and maintainable Python applications for client projects.</li>
+          <li>Maintained and updated existing software applications using Python.</li>
+        </ul>
+      </div>
+
+      <div class="experience-details">
+        <h4>Team Leadership and Optimization</h4>
+        <ul>
+          <li>Led a team in optimizing the codebase, resulting in a 20% improvement in application performance.</li>
+          <li>Achieved a 95% resolution rate for customer issues within 24 hours, elevating satisfaction by 15%.</li>
+        </ul>
+      </div>
+
+      <div class="experience-details">
+        <h4>Automation and Efficiency</h4>
+        <ul>
+          <li>Developed and implemented Python scripts to automate data analysis processes, resulting in a 50% reduction.</li>
+          <li>Implemented RESTful APIs, increasing data transfer efficiency by 75% and reducing system downtime by 20%.</li>
+          <li>Coordinated testing and validation procedures throughout the software development lifecycle.</li>
+        </ul>
+      </div>
+
+      <div class="experience-details">
+        <h4>Web Frameworks</h4>
+        <ul>
+          <li>Architected scalable solutions with Django and Flask, cutting response time by 50%.</li>
+          <li>Integrated third-party APIs into existing systems using Python.</li>
+          <li>Enhanced user experience on a website by developing interactive components using Python libraries.</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
+  <section id="projects" >
+  <h2>Projects</h2>
+  <p>Projects I've worked on!</p>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Projects I've worked on!</p>
-     <ul>
-       <li><strong>Sentiment Analysis Web App</strong></li><br/>
-          <ul>
-            <li><strong>Technology:</strong> Python, Html, CSS, Pandas, Matplotlib, NLTK, TextBlob (Machine Learning models)</li>
-            <li><strong>Duration:</strong> 1 Month</li>
-            <li><strong>Description:</strong> The Sentiment Analysis Web App is a user-friendly platform that allows individuals to analyze the
-              sentiment of text, providing insights into whether the expressed emotions are positive, negative, or neutral.</li>
-            <li><a href="https://github.com/shobana2000/Sentiment-Analysis-Web-App" target="_blank">
-              <i class="fa fa-github"></i>Sentiment-Analysis-Web-App</a></li>
-          </ul>
-        <br/>
-      <li><strong>iPubedit 3.0</strong></li><br/>
-        <ul>
-          <li><strong>Technology:</strong> Python, Perl, Regex, NLP, MongoDB, MySQL, Restful API Postman, JavaScript, Html/CSS</li>
-          <li><strong>Duration:</strong> 6 Month</li>
-          <li><strong>Description:</strong> The project aimed to enhance document processing, resulting in final outputs in XML and PDF
-  formats. Additionally, collaborated on the creation of a user-friendly front-end, incorporating schematron for robust
-  document validation and implementing automated PDF conversion.</li>
-        </ul>
-        <br/>
-       <li><strong>Image Extraction</strong></li><br/>
-        <ul>
-          <li><strong>Technology:</strong> Python, PIL, pytesseract, pdf2image, pdf2docx</li>
-          <li><strong>Duration:</strong> 2 Month</li>
-          <li><strong>Description:</strong> The tool facilitates DPI adjustments,
-  font name alterations, image renaming, font size adjustments, and fine-tuning contrast in RGB images. The project's focus
-  was on streamlining these processes, offering a seamless and efficient solution for various image modification tasks.</li>
-        </ul>
-        <br/>
-        <li><strong>SecureUser API</strong></li><br/>
-        <ul>
-          <li><strong>Technology:</strong> Python, Flask, Rest Api Postman, JWT, MongoDB</li>
-          <li><strong>Duration:</strong> 2 Month</li>
-          <li><strong>Description:</strong> The API's scope includes comprehensive CRUD operations for the effective management of user
-            and user template details, contributing to the establishment of a secure and efficient data management system.</li>
-          <li><a href="https://github.com/shobana2000/SecureUser_API" target="_blank">
-              <i class="fa fa-github"></i>SecureUser_API</a></li>
-        </ul>
-        <br/>
-       <li><strong>Conversion & Validation</strong></li><br/>
-        <ul>
-          <li><strong>Technology:</strong> Python, Perl, Regex, XML, pdf2docx, collection, PIL, Json, HTML, CSS, JavaScript</li>
-          <li><strong>Duration:</strong> 1 Year</li>
-          <li><strong>Description:</strong> The main purpose of this tool is for Quality Checking, Optimizing codes, Debugging issues,
-            and also removing duplicate content, DOI, template, affiliation id, etc.</li>
-        </ul>
-        <br/>
+  <div class="project">
+    <h3>Sentiment Analysis Web App</h3>
+    <ul>
+      <li><strong>Technology:</strong> Python, Html, CSS, Pandas, Matplotlib, NLTK, TextBlob (Machine Learning models)</li>
+      <li><strong>Duration:</strong> 1 Month</li>
+      <li><strong>Description:</strong> The Sentiment Analysis Web App is a user-friendly platform that allows individuals to analyze the sentiment of text, providing insights into whether the expressed emotions are positive, negative, or neutral.</li>
+      <li><a href="https://github.com/shobana2000/Sentiment-Analysis-Web-App" target="_blank"><i class="fa fa-github"></i>Sentiment-Analysis-Web-App</a></li>
     </ul>
+  </div>
+
+  <div class="project">
+    <h3>iPubedit 3.0</h3>
+    <ul>
+      <li><strong>Technology:</strong> Python, Perl, Regex, NLP, MongoDB, MySQL, Restful API Postman, JavaScript, Html/CSS</li>
+      <li><strong>Duration:</strong> 6 Month</li>
+      <li><strong>Description:</strong> The project aimed to enhance document processing, resulting in final outputs in XML and PDF formats. Additionally, collaborated on the creation of a user-friendly front-end, incorporating schematron for robust document validation and implementing automated PDF conversion.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>Image Extraction</h3>
+    <ul>
+      <li><strong>Technology:</strong> Python, PIL, pytesseract, pdf2image, pdf2docx</li>
+      <li><strong>Duration:</strong> 2 Month</li>
+      <li><strong>Description:</strong> The tool facilitates DPI adjustments, font name alterations, image renaming, font size adjustments, and fine-tuning contrast in RGB images. The project's focus was on streamlining these processes, offering a seamless and efficient solution for various image modification tasks.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>SecureUser API</h3>
+    <ul>
+      <li><strong>Technology:</strong> Python, Flask, Rest Api Postman, JWT, MongoDB</li>
+      <li><strong>Duration:</strong> 2 Month</li>
+      <li><strong>Description:</strong> The API's scope includes comprehensive CRUD operations for the effective management of user and user template details, contributing to the establishment of a secure and efficient data management system.</li>
+      <li><a href="https://github.com/shobana2000/SecureUser_API" target="_blank"><i class="fa fa-github"></i>SecureUser_API</a></li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>Conversion & Validation</h3>
+    <ul>
+      <li><strong>Technology:</strong> Python, Perl, Regex, XML, pdf2docx, collection, PIL, Json, HTML, CSS, JavaScript</li>
+      <li><strong>Duration:</strong> 1 Year</li>
+      <li><strong>Description:</strong> The main purpose of this tool is for Quality Checking, Optimizing codes, Debugging issues, and also removing duplicate content, DOI, template, affiliation id, etc.</li>
+    </ul>
+  </div>
+
+</section>
+
+
+  <section id="certifications">
+      <h2>Certifications</h2>
+      <div id="certifications-container">
+        <div id="slideshow-container">
+          <div class="slide certification-item">
+            <img src="images/Google_Ads.png" alt="Google Ads Certification" class="certification-img">
+          </div>
+          <div class="slide certification-item">
+            <img src="images/Gen_AI.png" alt="General AI Certification" class="certification-img">
+          </div>
+          <div class="slide certification-item">
+            <img src="images/Conference.jpg" alt="Conference Certification" class="certification-img">
+          </div>
+          <div class="slide certification-item">
+            <img src="images/Python.png" alt="Python Certification" class="certification-img">
+          </div>
+          <div class="slide certification-item">
+            <img src="images/RPA.png" alt="RPA Certification" class="certification-img">
+          </div>
+          <div class="slide certification-item">
+            <img src="images/ReactJs.png" alt="ReactJS Certification" class="certification-img">
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+      </div>
   </section>
 
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out to me. I'd love to hear from you!</p>
-    <!-- Contact Information -->
-    <div id="contact-info">
-       <p>Resume: <a style="color: black;" href="https://drive.google.com/file/d/19WQXKEpW5AOETB_QCcIghOlvpEhabM8p/view?usp=sharing" target="_blank">Resume</a></p>
-       <p>Email: <a href="mailto:shobanashobana197@gamil.com">shobanashobana197@gmail.com</a></p>
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me. I'd love to hear from you!</p>
+      <!-- Contact Information -->
+      <div id="contact-info">
+        <p>Resume: <a style="color: black;" href="https://drive.google.com/file/d/19WQXKEpW5AOETB_QCcIghOlvpEhabM8p/view?usp=sharing" target="_blank">Resume</a></p>
+        <p>Email: <a href="mailto:shobanashobana197@gamil.com">shobanashobana197@gmail.com</a></p>
 
-        <p id="mobile-number">Mobile: +91 (902) 586-7107</p>
+        <p id="mobile-number" style="display: none;">Mobile: +91 (902) 586-7107</p>
         <button onclick="toggleMobileNumber()">Show/Hide Mobile Number</button>
-
-    </div>
+      </div>
   </section>
+
 
   <section id="social1">
-    <div id="social">
-      <h2>Social Media</h2>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/shobana27" target="_blank"><i class="fa fa-linkedin"></i>LinkedIn</a></li>&nbsp;&nbsp;
-        <li><a href="https://github.com/shobana2000" target="_blank"><i class="fa fa-github"></i>GitHub</a></li>&nbsp;&nbsp;
-        <li><a href="https://in.pinterest.com/Shobana2K" target="_blank"><i class="fa fa-pinterest"></i>Pinterest</a></li>&nbsp;&nbsp;
-        <li><a href="https://leetcode.com/Shobana_B/" target="_blank"><i class="fa fa-pinterest"></i>Leetcode</a></li>&nbsp;&nbsp;
-        <!-- Add more social media links as needed -->
-      </ul>
-    </div>
-
+      <div id="social">
+        <h2>Social Media</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/shobana27" target="_blank"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+          <li><a href="https://github.com/shobana2000" target="_blank"><i class="fa fa-github"></i>GitHub</a></li>
+          <li><a href="https://in.pinterest.com/Shobana2K" target="_blank"><i class="fa fa-pinterest"></i>Pinterest</a></li>
+          <li><a href="https://leetcode.com/Shobana_B/" target="_blank"><i class="fa fa-pinterest"></i>Leetcode</a></li>
+          <!-- Add more social media links as needed -->
+        </ul>
+      </div>
   </section>
 
-  <footer>
-    &copy; 2024 Shobana's Odyssey, All rights reserved.!
-  </footer>
+   <section></section>
+
+  <footer>&copy; 2024 Shobana's Odyssey, All rights reserved.!</footer>
 
   <button class="scroll-to-top" onclick="scrollToTop()">Back to Home</button>
 
   <script>
     function toggleMenu() {
-      var menuToggle = document.querySelector('.menu-toggle');
-      var nav = document.querySelector('nav');
-      document.body.classList.toggle('menu-open');
-      nav.classList.toggle('show');
+        var menuToggle = document.querySelector('.menu-toggle');
+        var nav = document.querySelector('nav');
+        document.body.classList.toggle('menu-open');
+        nav.classList.toggle('show');
     }
 
     function scrollToTop() {
-      // Use document.documentElement for better cross-browser compatibility
-      document.documentElement.scrollTop = 0;
+        // Use document.documentElement for better cross-browser compatibility
+        document.documentElement.scrollTop = 0;
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-      var menuToggle = document.querySelector('.menu-toggle');
-      var menuIcon = document.querySelector('.menu-icon');
-      var nav = document.querySelector('nav');
-      var scrollButton = document.querySelector('.scroll-to-top');
+        var menuToggle = document.querySelector('.menu-toggle');
+        var menuIcon = document.querySelector('.menu-icon');
+        var nav = document.querySelector('nav');
+        var scrollButton = document.querySelector('.scroll-to-top');
 
-      menuToggle.addEventListener('click', toggleMenu);
-      menuIcon.addEventListener('click', toggleMenu);
+        menuToggle.addEventListener('click', toggleMenu);
+        menuIcon.addEventListener('click', toggleMenu);
 
-      // Show or hide the scroll button based on the user's scroll position
-      window.addEventListener('scroll', function () {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          scrollButton.style.display = 'block';
-        } else {
-          scrollButton.style.display = 'none';
-        }
-      });
+        // Show or hide the scroll button based on the user's scroll position
+        window.addEventListener('scroll', function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              scrollButton.style.display = 'block';
+            } else {
+              scrollButton.style.display = 'none';
+            }
+        });
     });
 
-     function toggleMobileNumber() {
-      var mobileNumber = document.getElementById('mobile-number');
-      var button = document.querySelector('button');
+    function toggleMobileNumber() {
+        var mobileNumber = document.getElementById('mobile-number');
+        var button = document.querySelector('button');
+        var socialSection = document.getElementById('social');
 
-      if (mobileNumber.style.display === 'none') {
-        mobileNumber.style.display = 'block';
-        button.textContent = 'Hide Mobile Number';
-      } else {
-        mobileNumber.style.display = 'none';
-        button.textContent = 'Show Mobile Number';
-      }
+        if (mobileNumber.style.display === 'none') {
+            mobileNumber.style.display = 'block';
+            button.textContent = 'Hide Mobile Number';
+
+            // Check if the social media section is visible, if not, scroll to it
+            if (socialSection && socialSection.style.display === 'none') {
+              socialSection.style.display = 'block';
+              // Scroll to the social media section
+              socialSection.scrollIntoView({ behavior: 'smooth' });
+            }
+            } else {
+                mobileNumber.style.display = 'none';
+                button.textContent = 'Show Mobile Number';
+        }
     }
+
+
+    // JavaScript for the slideshow functionality
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        let container = document.getElementById("slideshow-container");
+        slideIndex++;
+
+        if (slideIndex >= slides.length) {
+          slideIndex = 0;
+        }
+
+        let translateValue = `translateX(${-slideIndex * 100}%)`;
+        container.style.transform = translateValue;
+
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+
+
   </script>
 </body>
 
