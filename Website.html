@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="p:domain_verify" content="a896b68816df202fccbadcece29af85a"/>
+  <meta name="p:domain_verify" content="a896b68816df202fccbadcece29af85a"/>
   <meta name="p:domain_verify" content="a896b68816df202fccbadcece29af85a"/>
   <title>Shobana's Odyssey: Code & Creativity</title>
   <style>
@@ -15,21 +15,18 @@
       margin: 0;
       padding: 0;
     }
-
     header {
       background-color: #2c3e50;
       color: #ecf0f1;
       text-align: center;
       padding: 1em;
     }
-
     nav {
       background-color: #34495e;
       color: #ecf0f1;
       text-align: center;
       padding: 0.5em;
     }
-
     nav a {
       color: #ecf0f1;
       text-decoration: none;
@@ -37,11 +34,9 @@
       margin: 0 0.2em;
       display: inline-block;
     }
-
     nav a i {
       margin-right: 5px;
     }
-
     section {
       padding: 2em;
       margin: 20px;
@@ -49,7 +44,6 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
     }
-
     footer {
       background-color: #2c3e50;
       color: #ecf0f1;
@@ -59,12 +53,10 @@
       bottom: 0;
       width: 100%;
     }
-
     .menu-toggle {
       display: none;
       cursor: pointer;
     }
-
     .menu-icon {
       display: none;
       cursor: pointer;
@@ -74,7 +66,6 @@
       top: 15px;
       right: 15px;
     }
-
     .scroll-to-top {
       display: none;
       cursor: pointer;
@@ -87,101 +78,93 @@
       border: none;
       border-radius: 5px;
     }
-
     @media screen and (max-width: 768px) {
-      nav {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        width: 100%;
-        z-index: 1;
-        background-color: #34495e;
-        right: 0;
+      body.menu-open {
+        overflow: hidden;
       }
-
-      nav.show {
-        display: flex;
-      }
-
-      .menu-toggle,
-      .menu-icon {
+      .menu-toggle{
         display: block;
         position: fixed;
         top: 10px;
         right: 10px;
+        z-index: 2;
+        color: initial;
       }
-
+      nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 80%; /* Adjust width as needed */
+        background-color: #34495e;
+        z-index: 1;
+        padding-top: 60px; /* Add padding to account for the fixed header */
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      nav.show {
+        display: flex;
+      }
       nav a {
         display: block;
         margin: 10px 0;
       }
-
-      body.menu-open {
-        overflow: hidden;
+      section {
+        margin-top: 60px; /* Add margin to push the content below the fixed header */
       }
     }
-
-
-  #certifications-container {
-    max-width: 600px; /* Adjust the maximum width as per your layout */
-    margin: auto;
-    overflow: hidden;
-    border: 5px solid #ddd;
-    border-radius: 10px;
-  }
-
-  #slideshow-container {
-    display: flex;
-    transition: transform 1s ease-in-out;
-  }
-
-  .slide {
-    width: 100%;
-    flex: 0 0 auto;
-  }
-
-  .certification-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px; /* Adjust this value for rounded corners */
-  }
-
-  #contact {
-    text-align: center;
-    margin-top: 20px; /* Adjust the margin-top as needed */
-  }
-  #social {
-    text-align: center;
-    margin-top: 20px; /* Adjust the margin-top as needed */
-  }
-
-  #social ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px; /* Add some space below the social media links */
-  }
-
-  #social ul li {
-    margin: 0 10px; /* Adjust the margin as needed */
-  }
-
-  #social ul li a {
-    text-decoration: none;
-    color: darkviolet;
-  }
-
-  #social ul li a:hover {
-    color: #0066cc; /* Change the color on hover as needed */
-    text-decoration: underline;
-  }
-
-  #experience {
-      text-align: center;
+    #certifications-container {
+      max-width: 600px; /* Adjust the maximum width as per your layout */
+      margin: auto;
+      overflow: hidden;
+      border: 5px solid #ddd;
+      border-radius: 10px;
     }
-
+    #slideshow-container {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+    .slide {
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    .certification-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px; /* Adjust this value for rounded corners */
+    }
+    #contact {
+      text-align: center;
+      margin-top: 20px; /* Adjust the margin-top as needed */
+    }
+    #social {
+      text-align: center;
+      margin-top: 20px; /* Adjust the margin-top as needed */
+    }
+    #social ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px; /* Add some space below the social media links */
+    }
+    #social ul li {
+      margin: 0 10px; /* Adjust the margin as needed */
+    }
+    #social ul li a {
+      text-decoration: none;
+      color: darkviolet;
+    }
+    #social ul li a:hover {
+      color: #0066cc; /* Change the color on hover as needed */
+      text-decoration: underline;
+    }
+    #experience {
+       text-align: center;
+    }
     .experience-item {
       max-width: 800px;
       margin: auto;
@@ -191,112 +174,91 @@
       border-radius: 8px;
       margin-bottom: 20px;
     }
-
     .experience-item strong {
       font-size: 1.2em;
     }
-
     .experience-item a {
       color: #3498db;
     }
-
     .experience-item p {
       margin-top: 5px;
       margin-bottom: 15px;
     }
-
     .experience-details {
       margin-top: 15px;
       margin-left: 15px; /* Adjust the left margin as needed */
     }
-
     .experience-details h4 {
       color: #3498db;
     }
-
     .experience-details ul {
       list-style-type: disc;
       padding-left: 20px;
     }
-
     .experience-details li {
       margin-bottom: 10px;
     }
-
-  .project {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
-
-  .project h3 {
-    margin-bottom: 10px;
-  }
-
-  .project-details {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-
-  .education-entry {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
-
-  .education-entry h3 {
-    margin-bottom: 10px;
-  }
-
-  .education-details {
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  .education-details li {
-    margin-bottom: 5px;
-  }
-
-
-   #about {
-    text-align: center;
-  }
-
-  .about-content {
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
-  }
-
-  .about-content p {
-    margin-bottom: 15px;
-  }
-
-  .about-content ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .about-content li {
-    margin-bottom: 15px;
-  }
+    .project {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    .project h3 {
+      margin-bottom: 10px;
+    }
+    .project-details {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .education-entry {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    .education-entry h3 {
+      margin-bottom: 10px;
+    }
+    .education-details {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .education-details li {
+      margin-bottom: 5px;
+    }
+     #about {
+      text-align: center;
+    }
+    .about-content {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+    .about-content p {
+      margin-bottom: 15px;
+    }
+    .about-content ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .about-content li {
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 
 <body>
 
-   <header style="text-align: center;">
+  <header style="text-align: center;">
     <img src="profile\photo.png" alt="Shobana's Profile Picture" style="border-radius: 50%; width: 150px; height: 150px; margin-right: 20px;">
     <div style="display: inline-block; text-align: left;">
       <h1>Hello or Bonjour à tous 👋, bienvenue sur mon profil..!</h1>
       <h3><a style="color: white;" href="https://in.linkedin.com/in/shobana27?trk=profile-badge">J' suis Shobana</a></h3>
-      <h4>Code & Creativity <a style="color: white;"</h4>
+      <h4>Code & Creativity</h4>
     </div>
-
   </header>
 
   <div class="menu-toggle">&#9776;</div>
@@ -310,7 +272,6 @@
     <a href="#contact" onclick="toggleMenu()"><i class="fa fa-envelope"></i>Contact</a>
     <a href="#social" onclick="toggleMenu()"><i class="fa fa-envelope"></i>Social Media</a>
   </nav>
-
 
   <section id="about">
     <a style="color: black;" href="https://drive.google.com/file/d/19WQXKEpW5AOETB_QCcIghOlvpEhabM8p/view?usp=sharing" target="_blank">Resume</a>
@@ -406,58 +367,56 @@
   </section>
 
   <section id="projects" >
-  <h2>Projects</h2>
-  <p>Projects I've worked on!</p>
+    <h2>Projects</h2>
+    <p>Projects I've worked on!</p>
 
-  <div class="project">
-    <h3>Sentiment Analysis Web App</h3>
-    <ul>
-      <li><strong>Technology:</strong> Python, Html, CSS, Pandas, Matplotlib, NLTK, TextBlob (Machine Learning models)</li>
-      <li><strong>Duration:</strong> 1 Month</li>
-      <li><strong>Description:</strong> The Sentiment Analysis Web App is a user-friendly platform that allows individuals to analyze the sentiment of text, providing insights into whether the expressed emotions are positive, negative, or neutral.</li>
-      <li><a href="https://github.com/shobana2000/Sentiment-Analysis-Web-App" target="_blank"><i class="fa fa-github"></i>Sentiment-Analysis-Web-App</a></li>
-    </ul>
-  </div>
+    <div class="project">
+      <h3>Sentiment Analysis Web App</h3>
+      <ul>
+        <li><strong>Technology:</strong> Python, Html, CSS, Pandas, Matplotlib, NLTK, TextBlob (Machine Learning models)</li>
+        <li><strong>Duration:</strong> 1 Month</li>
+        <li><strong>Description:</strong> The Sentiment Analysis Web App is a user-friendly platform that allows individuals to analyze the sentiment of text, providing insights into whether the expressed emotions are positive, negative, or neutral.</li>
+        <li><a href="https://github.com/shobana2000/Sentiment-Analysis-Web-App" target="_blank"><i class="fa fa-github"></i>Sentiment-Analysis-Web-App</a></li>
+      </ul>
+    </div>
 
-  <div class="project">
-    <h3>iPubedit 3.0</h3>
-    <ul>
-      <li><strong>Technology:</strong> Python, Perl, Regex, NLP, MongoDB, MySQL, Restful API Postman, JavaScript, Html/CSS</li>
-      <li><strong>Duration:</strong> 6 Month</li>
-      <li><strong>Description:</strong> The project aimed to enhance document processing, resulting in final outputs in XML and PDF formats. Additionally, collaborated on the creation of a user-friendly front-end, incorporating schematron for robust document validation and implementing automated PDF conversion.</li>
-    </ul>
-  </div>
+    <div class="project">
+      <h3>iPubedit 3.0</h3>
+      <ul>
+        <li><strong>Technology:</strong> Python, Perl, Regex, NLP, MongoDB, MySQL, Restful API Postman, JavaScript, Html/CSS</li>
+        <li><strong>Duration:</strong> 6 Month</li>
+        <li><strong>Description:</strong> The project aimed to enhance document processing, resulting in final outputs in XML and PDF formats. Additionally, collaborated on the creation of a user-friendly front-end, incorporating schematron for robust document validation and implementing automated PDF conversion.</li>
+      </ul>
+    </div>
 
-  <div class="project">
-    <h3>Image Extraction</h3>
-    <ul>
-      <li><strong>Technology:</strong> Python, PIL, pytesseract, pdf2image, pdf2docx</li>
-      <li><strong>Duration:</strong> 2 Month</li>
-      <li><strong>Description:</strong> The tool facilitates DPI adjustments, font name alterations, image renaming, font size adjustments, and fine-tuning contrast in RGB images. The project's focus was on streamlining these processes, offering a seamless and efficient solution for various image modification tasks.</li>
-    </ul>
-  </div>
+    <div class="project">
+      <h3>Image Extraction</h3>
+      <ul>
+        <li><strong>Technology:</strong> Python, PIL, pytesseract, pdf2image, pdf2docx</li>
+        <li><strong>Duration:</strong> 2 Month</li>
+        <li><strong>Description:</strong> The tool facilitates DPI adjustments, font name alterations, image renaming, font size adjustments, and fine-tuning contrast in RGB images. The project's focus was on streamlining these processes, offering a seamless and efficient solution for various image modification tasks.</li>
+      </ul>
+    </div>
 
-  <div class="project">
-    <h3>SecureUser API</h3>
-    <ul>
-      <li><strong>Technology:</strong> Python, Flask, Rest Api Postman, JWT, MongoDB</li>
-      <li><strong>Duration:</strong> 2 Month</li>
-      <li><strong>Description:</strong> The API's scope includes comprehensive CRUD operations for the effective management of user and user template details, contributing to the establishment of a secure and efficient data management system.</li>
-      <li><a href="https://github.com/shobana2000/SecureUser_API" target="_blank"><i class="fa fa-github"></i>SecureUser_API</a></li>
-    </ul>
-  </div>
+    <div class="project">
+      <h3>SecureUser API</h3>
+      <ul>
+        <li><strong>Technology:</strong> Python, Flask, Rest Api Postman, JWT, MongoDB</li>
+        <li><strong>Duration:</strong> 2 Month</li>
+        <li><strong>Description:</strong> The API's scope includes comprehensive CRUD operations for the effective management of user and user template details, contributing to the establishment of a secure and efficient data management system.</li>
+        <li><a href="https://github.com/shobana2000/SecureUser_API" target="_blank"><i class="fa fa-github"></i>SecureUser_API</a></li>
+      </ul>
+    </div>
 
-  <div class="project">
-    <h3>Conversion & Validation</h3>
-    <ul>
-      <li><strong>Technology:</strong> Python, Perl, Regex, XML, pdf2docx, collection, PIL, Json, HTML, CSS, JavaScript</li>
-      <li><strong>Duration:</strong> 1 Year</li>
-      <li><strong>Description:</strong> The main purpose of this tool is for Quality Checking, Optimizing codes, Debugging issues, and also removing duplicate content, DOI, template, affiliation id, etc.</li>
-    </ul>
-  </div>
-
-</section>
-
+    <div class="project">
+      <h3>Conversion & Validation</h3>
+      <ul>
+        <li><strong>Technology:</strong> Python, Perl, Regex, XML, pdf2docx, collection, PIL, Json, HTML, CSS, JavaScript</li>
+        <li><strong>Duration:</strong> 1 Year</li>
+        <li><strong>Description:</strong> The main purpose of this tool is for Quality Checking, Optimizing codes, Debugging issues, and also removing duplicate content, DOI, template, affiliation id, etc.</li>
+      </ul>
+    </div>
+  </section>
 
   <section id="certifications">
       <h2>Certifications</h2>
@@ -499,7 +458,6 @@
       </div>
   </section>
 
-
   <section id="social1">
       <div id="social">
         <h2>Social Media</h2>
@@ -513,7 +471,7 @@
       </div>
   </section>
 
-   <section></section>
+  <section></section>
 
   <footer>&copy; 2024 Shobana's Odyssey, All rights reserved.!</footer>
 
@@ -591,9 +549,7 @@
 
         setTimeout(showSlides, 3000); // Change slide every 3 seconds
     }
-
-
   </script>
-</body>
 
+</body>
 </html>
